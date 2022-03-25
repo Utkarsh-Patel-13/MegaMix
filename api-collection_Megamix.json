@@ -1,0 +1,274 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Megamix",
+    "dateExported": "2022-03-03T17:51:52.158Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "containerId": "",
+            "sortNum": 10000,
+            "name": "Hello",
+            "_id": "bfdf12e0-9cc1-4e52-819a-b328240d5389",
+            "created": "2022-03-03T04:44:06.086Z",
+            "settings": { "headers": [], "tests": [] }
+        },
+        {
+            "containerId": "",
+            "sortNum": 20000,
+            "name": "File Server",
+            "_id": "aa0e2ce0-8f01-4b5e-ad52-aeb1760f5649",
+            "created": "2022-03-03T17:39:57.939Z"
+        }
+    ],
+    "requests": [
+        {
+            "containerId": "bfdf12e0-9cc1-4e52-819a-b328240d5389",
+            "sortNum": 10000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "Hello /",
+            "url": "{{local}}/hello/fc",
+            "method": "GET",
+            "modified": "2022-03-03T04:55:49.550Z",
+            "created": "2022-03-03T04:34:24.141Z",
+            "_id": "aaf9cc3c-9b26-4cca-90ab-6671339f64dd",
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "isjson",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "containerId": "bfdf12e0-9cc1-4e52-819a-b328240d5389",
+            "sortNum": 20000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "Hello /name",
+            "url": "{{local}}/hello/fc",
+            "method": "GET",
+            "modified": "2022-03-03T04:55:58.225Z",
+            "created": "2022-03-03T04:37:50.701Z",
+            "_id": "7b2f909f-ca3c-4f15-98e9-27df614a6500",
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "isjson",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "containerId": "bfdf12e0-9cc1-4e52-819a-b328240d5389",
+            "sortNum": 30000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "Hello ?name",
+            "url": "{{local}}/hello?name=fc",
+            "method": "GET",
+            "modified": "2022-03-03T04:56:08.613Z",
+            "created": "2022-03-03T04:38:44.302Z",
+            "_id": "62bb2279-b1fe-4d10-a361-23ed767de1d0",
+            "params": [{ "name": "name", "value": "fc", "isPath": false }],
+            "tests": [
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "isjson",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "containerId": "bfdf12e0-9cc1-4e52-819a-b328240d5389",
+            "sortNum": 40000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "Hello /",
+            "url": "{{local}}/hello",
+            "method": "POST",
+            "modified": "2022-03-03T17:18:52.902Z",
+            "created": "2022-03-03T04:40:33.430Z",
+            "_id": "ce85e45a-8777-46df-8b7d-d2cf4882e74c",
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"fc\",\n    \"age\": 22\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "201"
+                },
+                {
+                    "type": "res-body",
+                    "custom": "",
+                    "action": "isjson",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "containerId": "aa0e2ce0-8f01-4b5e-ad52-aeb1760f5649",
+            "sortNum": 50000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "html file",
+            "url": "{{local}}/public/html/index.html",
+            "method": "GET",
+            "modified": "2022-03-03T17:43:40.200Z",
+            "created": "2022-03-03T17:40:18.093Z",
+            "_id": "4e8fd3ad-512f-4f0e-9b97-962924cdf6ea",
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "custom-header",
+                    "custom": "Content-Type",
+                    "action": "equal",
+                    "value": "text/html; charset=utf-8"
+                }
+            ]
+        },
+        {
+            "containerId": "",
+            "sortNum": 60000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "Not Found",
+            "url": "{{local}}/wrong/path",
+            "method": "GET",
+            "modified": "2022-03-03T17:45:14.261Z",
+            "created": "2022-03-03T17:44:42.187Z",
+            "_id": "fcbf81be-c85a-4924-b091-fafdd4b44d6b",
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "404"
+                }
+            ]
+        },
+        {
+            "containerId": "aa0e2ce0-8f01-4b5e-ad52-aeb1760f5649",
+            "sortNum": 70000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "image file",
+            "url": "{{local}}/public/images/FC/FC.png",
+            "method": "GET",
+            "modified": "2022-03-03T17:50:28.918Z",
+            "created": "2022-03-03T17:45:43.920Z",
+            "_id": "6de9f7d2-2bc5-4de8-af33-15a9ebe483fe",
+            "params": [],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "Content-Type",
+                    "custom": "",
+                    "action": "contains",
+                    "value": "image"
+                }
+            ]
+        },
+        {
+            "containerId": "aa0e2ce0-8f01-4b5e-ad52-aeb1760f5649",
+            "sortNum": 80000,
+            "headers": [
+                { "name": "Accept", "value": "*/*" },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ],
+            "colId": "39d73812-6277-4ef6-9529-65a7da594f02",
+            "name": "image with resize",
+            "url": "{{local}}/public/images/FC/test.jpeg?width=20&height=20",
+            "method": "GET",
+            "modified": "2022-03-03T17:50:10.840Z",
+            "created": "2022-03-03T17:47:40.641Z",
+            "_id": "c56b247e-dd35-4097-b6a7-d563ff2c137f",
+            "params": [
+                { "name": "width", "value": "20", "isPath": false },
+                { "name": "height", "value": "20", "isPath": false }
+            ],
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "200"
+                },
+                {
+                    "type": "Content-Type",
+                    "custom": "",
+                    "action": "contains",
+                    "value": "image"
+                }
+            ]
+        }
+    ],
+    "settings": { "headers": [], "tests": [] }
+}

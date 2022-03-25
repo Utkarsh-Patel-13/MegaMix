@@ -1,3 +1,6 @@
+use std::fmt::Debug;
+
+use rocket::response::status;
 use rocket::serde::json::Json;
 use rocket::serde::{Deserialize, Serialize};
 
@@ -36,10 +39,11 @@ pub fn hello_name_query(name: String) -> Json<HelloResponse> {
 }
 
 #[post("/", format = "json", data = "<user>")]
-pub fn hello_name_json_post(user: Json<HelloName>) -> Json<HelloResponse> {
-    Json(HelloResponse {
-        message: format!("Hello, {}, your age is {}", user.name, user.age),
-    })
+pub fn hello_name_json_post(user: Json<HelloName>) -> status::Created<Json<HelloResponse>> {
+    let res = Json(HelloResponse {
+        message: format!("{} stored!!", user.name),
+    });
+    status::Created::new("local").body(res)
 }
 
 pub fn stage() -> rocket::fairing::AdHoc {
